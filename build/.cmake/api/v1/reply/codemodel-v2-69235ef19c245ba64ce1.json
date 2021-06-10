@@ -38,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "sniff_and_then_spoof::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sniff_and_then_spoof-Debug-33be8b3f35a75497811a.json",
+					"jsonFile" : "target-sniff_and_then_spoof-Debug-d0c52e11364a3906d270.json",
 					"name" : "sniff_and_then_spoof",
 					"projectIndex" : 0
 				}
@@ -48,8 +48,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/louzheng/lessons/Networkpractice2/7/sniffSpoof/build",
-		"source" : "/home/louzheng/lessons/Networkpractice2/7/sniffSpoof"
+		"build" : "/home/louzheng/lessons/Networkpractice2/7/sniffSpoof/attack_defend_practice/build",
+		"source" : "/home/louzheng/lessons/Networkpractice2/7/sniffSpoof/attack_defend_practice"
 	},
 	"version" : 
 	{

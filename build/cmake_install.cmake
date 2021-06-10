@@ -1,4 +1,4 @@
-# Install script for directory: /home/louzheng/lessons/Networkpractice2/7/sniffSpoof
+# Install script for directory: /home/louzheng/lessons/Networkpractice2/7/sniffSpoof/attack_defend_practice
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/louzheng/lessons/Networkpractice2/7/sniffSpoof/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/louzheng/lessons/Networkpractice2/7/sniffSpoof/attack_defend_practice/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

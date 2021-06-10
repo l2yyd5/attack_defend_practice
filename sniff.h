@@ -3,8 +3,7 @@
 #include "icmpSpoof.hpp"
 
 std::string targetIP("192.168.60.3");
-std::string srcIP("192.168.60.1");
-std::string attackerIP("127.0.0.1");
+std::string srcIP;
 
 void got_packet(unsigned char *args, const struct pcap_pkthdr *header, const unsigned char *packet) {
   int sockfd, res;
@@ -22,10 +21,11 @@ void got_packet(unsigned char *args, const struct pcap_pkthdr *header, const uns
   if ((sockfd = socket(AF_INET, SOCK_RAW, IPPROTO_ICMP)) < 0) {
     std::cout << "create sockfd error\n";
   }
+  srcIP = inet_ntoa(ip->iph_destip);
 
   res = setsockopt(sockfd, IPPROTO_IP, IP_HDRINCL, ptr_one, sizeof(one));
 
-  reping *redirect = new reping(targetIP, srcIP, attackerIP);
+  reping *redirect = new reping(targetIP, srcIP);
   redirect->run(*icmp, packet, header->len);
   delete redirect;
 }

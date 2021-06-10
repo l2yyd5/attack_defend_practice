@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/louzheng/lessons/Networkpractice2/7/sniffSpoof/build
+CXX_INCLUDES = -I/home/louzheng/lessons/Networkpractice2/7/sniffSpoof/attack_defend_practice/build
 
 CXX_FLAGS = -pthread -g -std=gnu++11
 

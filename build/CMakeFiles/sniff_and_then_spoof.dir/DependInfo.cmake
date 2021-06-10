@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/louzheng/lessons/Networkpractice2/7/sniffSpoof/sniff_and_then_spoof.cpp" "CMakeFiles/sniff_and_then_spoof.dir/sniff_and_then_spoof.cpp.o" "gcc" "CMakeFiles/sniff_and_then_spoof.dir/sniff_and_then_spoof.cpp.o.d"
+  "/home/louzheng/lessons/Networkpractice2/7/sniffSpoof/attack_defend_practice/sniff_and_then_spoof.cpp" "CMakeFiles/sniff_and_then_spoof.dir/sniff_and_then_spoof.cpp.o" "gcc" "CMakeFiles/sniff_and_then_spoof.dir/sniff_and_then_spoof.cpp.o.d"
   )
 
 # Targets to which this target links.

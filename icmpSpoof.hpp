@@ -15,7 +15,6 @@ class reping {
   std::string payload;
   std::string targetIP;
   std::string srcIP;
-  std::string attackerIP;
   ipv4_header ip;
   icmp_header echo_reply;
   boost::asio::ip::icmp::endpoint spoofed_endpoint;
@@ -63,7 +62,7 @@ class reping {
  public:
   reping() {}
   ~reping() {}
-  reping(std::string tIP, std::string sIP, std::string aIP) : targetIP(tIP), srcIP(sIP), attackerIP(aIP), spoofed_endpoint(boost::asio::ip::address_v4::from_string(srcIP), 23333), receiver_endpoint(boost::asio::ip::address_v4::from_string(targetIP), 23333) {}
+  reping(std::string tIP, std::string sIP) : targetIP(tIP), srcIP(sIP), spoofed_endpoint(boost::asio::ip::address_v4::from_string(srcIP), 23333), receiver_endpoint(boost::asio::ip::address_v4::from_string(targetIP), 23333) {}
   void run(icmpheader tempicmp, const unsigned char *data, int len) {
     init(tempicmp, data, len);
     boost::asio::io_service io_service;
