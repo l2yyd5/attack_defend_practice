@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/louzheng/lessons/Networkpractice2/7/sniffSpoof/attack_defend_practice/build",
-  "command": "/usr/bin/c++  -I/home/louzheng/lessons/Networkpractice2/7/sniffSpoof/attack_defend_practice/build -pthread -g -std=gnu++11 -o CMakeFiles/sniff_and_then_spoof.dir/sniff_and_then_spoof.cpp.o -c /home/louzheng/lessons/Networkpractice2/7/sniffSpoof/attack_defend_practice/sniff_and_then_spoof.cpp",
-  "file": "/home/louzheng/lessons/Networkpractice2/7/sniffSpoof/attack_defend_practice/sniff_and_then_spoof.cpp"
-}
-]
