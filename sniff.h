@@ -6,11 +6,6 @@ std::string targetIP("192.168.60.3");
 std::string srcIP;
 
 void got_packet(unsigned char *args, const struct pcap_pkthdr *header, const unsigned char *packet) {
-  int sockfd, res;
-  int one = 1;
-  int *ptr_one = &one;
-
-  struct ethheader *eth = (struct ethheader *)packet;
   struct ipheader *ip = (struct ipheader *)(packet + sizeof(struct ethheader));
   struct icmpheader *icmp = (struct icmpheader *)(packet + sizeof(struct ethheader) + sizeof(struct ipheader));
 
@@ -18,12 +13,7 @@ void got_packet(unsigned char *args, const struct pcap_pkthdr *header, const uns
   std::cout << "  From: " << inet_ntoa(ip->iph_sourceip) << "\n";
   std::cout << "  to: " << inet_ntoa(ip->iph_destip) << "\n";
 
-  if ((sockfd = socket(AF_INET, SOCK_RAW, IPPROTO_ICMP)) < 0) {
-    std::cout << "create sockfd error\n";
-  }
   srcIP = inet_ntoa(ip->iph_destip);
-
-  res = setsockopt(sockfd, IPPROTO_IP, IP_HDRINCL, ptr_one, sizeof(one));
 
   reping *redirect = new reping(targetIP, srcIP);
   redirect->run(*icmp, packet, header->len);
