@@ -1,1 +1,0 @@
-/usr/bin/c++ -pthread -g CMakeFiles/sniff_and_then_spoof.dir/sniff_and_then_spoof.cpp.o -o sniff_and_then_spoof  /usr/lib/libpcap.so 
